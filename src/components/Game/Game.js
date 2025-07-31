@@ -15,11 +15,10 @@ function Game() {
   function processGuess(guess) {
     setGuessLogs([...guessLogs, guess]);
   }
-  console.log(guessLogs);
 
   return (
   <>
-    <GuessResults guessLogs={guessLogs}/>
+    <GuessResults guessLogs={guessLogs} answer={answer}/>
     <GuessInput processGuess={processGuess}/>
   </>
   );
