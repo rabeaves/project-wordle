@@ -1,6 +1,6 @@
 import React from 'react';
 
-function GuessInput({processGuess}) {
+function GuessInput({processGuess, gameStatus}) {
   const [guess, setGuess] = React.useState('');
 
   function handleSubmit(event) {
@@ -12,7 +12,8 @@ function GuessInput({processGuess}) {
   return (
     <form className="guess-input-wrapper" onSubmit={handleSubmit}>
       <label htmlFor="guessInput">Enter guess:</label>
-      <input 
+      <input
+        disabled = {gameStatus !== "running"}
         id="guessInput"
         type="text"
         minLength="5"

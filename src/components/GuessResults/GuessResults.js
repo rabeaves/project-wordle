@@ -7,7 +7,12 @@ function GuessResults({guessLogs, answer}) {
   return (
     <div className="guess-results">
       {range(NUM_OF_GUESSES_ALLOWED).map((num) => (
-        <Guess key={num} value={guessLogs[num]} answer={answer}/>
+        <Guess 
+          className="guess"
+          key={num}
+          value={guessLogs[num]}
+          answer={answer}
+        />
       ))}
     </div>
   );
