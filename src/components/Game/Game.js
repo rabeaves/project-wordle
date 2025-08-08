@@ -30,7 +30,6 @@ function Game() {
 
   return (
   <>
-    {gameStatus}
     <GuessResults guessLogs={guessLogs} answer={answer}/>
     <GuessInput processGuess={processGuess} gameStatus={gameStatus}/>
     {gameStatus === "won" && <HappyBanner guessCount={guessLogs.length}></HappyBanner>}
