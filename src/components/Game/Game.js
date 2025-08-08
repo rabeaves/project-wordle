@@ -18,7 +18,7 @@ function Game() {
 
   return (
   <>
-    <GuessResults guessLogs={guessLogs}/>
+    <GuessResults guessLogs={guessLogs} answer={answer}/>
     <GuessInput processGuess={processGuess}/>
   </>
   );
