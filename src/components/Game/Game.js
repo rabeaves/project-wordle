@@ -15,7 +15,6 @@ function Game() {
   function processGuess(guess) {
     setGuessLogs([...guessLogs, guess]);
   }
-  console.log(guessLogs);
 
   return (
   <>
