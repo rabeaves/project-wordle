@@ -2,7 +2,7 @@ import React from 'react';
 import { range } from '../../utils';
 import { checkGuess }from '../../game-helpers';
 
-function Guess( { value, answer } ) {
+function Guess( { value, answer} ) {
   const checkedValue = checkGuess(value, answer);
   return (
     <p className="guess">
